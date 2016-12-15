@@ -1,0 +1,44 @@
+/*
+"Progress bar" plugin
+*/
+
+.ui-progress-bar{
+    width: 100%;
+    background-color: transparent;
+    height: 3px;
+    margin: 3px 0px;
+    overflow: hidden;
+}
+
+    /* IE7 doesn't support opacity prop so we use filter for it */
+.ui-progress-bg{
+    opacity: 0.2;
+    filter: Alpha(Opacity=20);
+    background-color: #5DBA21;
+    background-color: #5DBA21;
+    height: 3px;
+    width: 100%;
+}
+
+.ui-progress-value{
+    background-color: #5DBA21;
+    background-color: #5DBA21;
+    height: 3px;
+    margin-top: -3px;
+}
+
+/*
+indeterminate state
+*/
+.ui-progress-bar[indeterminate='true'] .ui-progress-value{
+    width: 33% !important;
+    animation-name: ui-progress-bar-shift;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ui-progress-bar-shift{
+    0%{ -ms-transform:  translate(-100%,0px); }
+    100%{ -ms-transform: translate(300%,0px); }
+}
