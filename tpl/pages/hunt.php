@@ -187,7 +187,7 @@
 								map.removeLayer(layer);
 							});
 
-							window.location.href = "http://explore.karin.green/index.php?page=hunt";
+							window.location.href = "index.php?page=hunt";
 
 						}
 

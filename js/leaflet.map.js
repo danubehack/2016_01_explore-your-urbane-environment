@@ -277,7 +277,7 @@ $(document).on("ready", function () {
 					localStorage.setItem("trackdata_string", JSON.stringify(json));
 					localStorage.setItem("trackdata_hunter", JSON.stringify(info.user_name));
 
-					window.location.href = "http://explore.karin.green/index.php?page=hunt";
+					window.location.href = "index.php?page=hunt";
 				}
 			}
 
@@ -304,7 +304,7 @@ $(document).on("ready", function () {
 				localStorage.setItem("trackdata_string", JSON.stringify(json));
 				localStorage.setItem("trackdata_hunter", JSON.stringify(info.user_name));
 
-				window.location.href = "http://explore.karin.green/index.php?page=hunt";
+				window.location.href = "index.php?page=hunt";
 			}
 
 		});
@@ -321,7 +321,7 @@ $(document).on("ready", function () {
 			map.removeLayer(layer);
 		});
 
-		window.location.href = "http://explore.karin.green/index.php?page=hunt";
+		window.location.href = "index.php?page=hunt";
 
 	}
 
